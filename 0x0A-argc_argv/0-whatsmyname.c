@@ -9,6 +9,6 @@
 
 int main(int argc __attribute__((unused)), char *argv[])
 {
-printf("%s", argv[0]);
+printf("%s", *argv);
 return (0);
 }
