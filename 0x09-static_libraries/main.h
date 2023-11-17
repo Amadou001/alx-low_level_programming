@@ -1,4 +1,4 @@
-void _putchar(char c);
+int _putchar(char c);
 void _islower(int c);
 void _isalpha(int c);
 void _abs(int n);
