@@ -14,7 +14,7 @@ size_t len1, len2, lentotal;
 char *string;
 if (s1 == NULL)
 {
-s1 ="";
+s1 = "";
 }
 if (s2 == NULL)
 {
