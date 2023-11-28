@@ -22,11 +22,14 @@ len2 = strlen(owner);
 d->name = malloc(sizeof(char) * (len1 + 1));
 if (d->name == NULL)
 {
+free(d);
 return (NULL);
 }
 d->owner = malloc(sizeof(char) * (len2 + 1));
 if (d->owner == NULL)
 {
+free(d);
+free(d->name);
 return (NULL);
 }
 strcpy(d->name, name);
