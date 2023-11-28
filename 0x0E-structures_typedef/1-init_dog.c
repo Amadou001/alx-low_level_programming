@@ -11,15 +11,8 @@
 */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-d = (struct dog *)calloc(3, sizeof(struct dog));
-if (d != NULL)
-{
-d->name = strdup(name);
+d = malloc(sizeof(struct dog));
+d->name = name;
 d->age = age;
-d->owner = strdup(owner);
-}
-if (d->name == NULL || d->owner == NULL)
-{
-printf("faillure\n");
-}
+d->owner = owner;
 }
