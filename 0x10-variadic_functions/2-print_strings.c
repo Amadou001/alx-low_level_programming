@@ -28,5 +28,6 @@ if (i != (n - 1) && separator != NULL)
 printf("%s", separator);
 }
 }
+va_end(args);
 printf("\n");
 }
