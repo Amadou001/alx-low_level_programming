@@ -24,7 +24,7 @@ case 'i':
 printf("%s%d", separator, va_arg(args, int));
 break;
 case 'f':
-printf("%s%f",separator, va_arg(args, double));
+printf("%s%f", separator, va_arg(args, double));
 break;
 case 's':
 {
@@ -35,6 +35,7 @@ printf("(nil)");
 }
 printf("%s%s", separator, str);
 }
+break;
 default:
 break;
 }
