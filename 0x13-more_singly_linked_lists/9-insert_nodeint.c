@@ -22,6 +22,12 @@ newnode->next = NULL;
 *head = newnode;
 return (*head);
 }
+if (idx == 0)
+{
+newnode->next = *head;
+*head = newnode;
+return (*head);
+}
 temp = *head;
 while (temp != NULL && i < idx)
 {
