@@ -1,5 +1,5 @@
 section .data
-    hello db "Hello, Holberton", 0
+    hello db "Hello, Holberton", 10 ; 10 is the ASCII code for newline
 
 section .text
     global main
