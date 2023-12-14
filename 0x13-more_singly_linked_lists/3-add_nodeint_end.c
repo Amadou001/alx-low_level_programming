@@ -13,13 +13,13 @@ if (newnode == NULL)
 {
 return (NULL);
 }
+newnode->next = NULL;
+newnode->n = n;
 if (*head == NULL)
 {
 *head = newnode;
 return (*head);
 }
-newnode->next = NULL;
-newnode->n = n;
 temp = *head;
 while (temp->next != NULL)
 {
