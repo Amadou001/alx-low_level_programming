@@ -23,7 +23,7 @@ newnode->next = NULL;
 return (*head);
 }
 temp = *head;
-while (temp != NULL && i < idx - 1)
+while (temp != NULL && i < idx)
 {
 temp = temp->next;
 i++;
