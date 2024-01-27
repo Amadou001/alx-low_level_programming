@@ -35,6 +35,7 @@ length++;
 }
 if (idx >= length)
 {
+free(new_node);
 return (NULL);
 }
 temp = *h;
