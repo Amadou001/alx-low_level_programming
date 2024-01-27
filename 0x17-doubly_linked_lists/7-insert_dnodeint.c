@@ -25,6 +25,7 @@ if (idx == 0)
 new_node->n = n;
 new_node->prev = NULL;
 new_node->next = *h;
+(*h)->prev = new_node;
 *h = new_node;
 return (new_node);
 }
