@@ -9,7 +9,7 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 unsigned long int index;
-hash_node_t *new_node, *current;
+hash_node_t *current;
 const unsigned char *key_cast;
 if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
 {
@@ -32,6 +32,25 @@ return (1);
 }
 current = current->next;
 }
+return (node_creation(ht, key, value, index));
+}
+
+
+/**
+ * node_creation - creates a new node and adds it at the begining
+ * of the list
+ * @ht: the hash table
+ * @key: the key
+ * @value: the value of the key
+ * @index: the index of the key inside the hash table
+ * Return: 1 if it succeded or 0 otherwise
+*/
+int node_creation(hash_table_t *ht,
+const char *key,
+const char *value,
+unsigned long int index)
+{
+hash_node_t *new_node;
 new_node = malloc(sizeof(hash_node_t));
 if (new_node == NULL)
 {
