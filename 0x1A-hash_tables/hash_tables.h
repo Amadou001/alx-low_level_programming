@@ -42,5 +42,6 @@ int node_creation(hash_table_t *ht,
 const char *key,
 const char *value,
 unsigned long int index);
+char *hash_table_get(const hash_table_t *ht, const char *key);
 
 #endif
