@@ -26,7 +26,7 @@ else
 {
 printf(", ");
 }
-printf("'%s: '%s'", current->key, current->value);
+printf("'%s': '%s'", current->key, current->value);
 current = current->next;
 }
 }
